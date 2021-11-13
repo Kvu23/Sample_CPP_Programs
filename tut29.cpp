@@ -3,6 +3,7 @@ using namespace std;
 
 /*
 This example program is of Virtual Base class
+Inheritance: 
 Student->Test
 Student->Sports
 Test-> Results
