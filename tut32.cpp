@@ -17,10 +17,10 @@ int main(int argc, char const *argv[])
 {
     /*for built in data type */
     int a = 10;
-    int *ptr = new(int);
+    int *ptr = new(nothrow)(int);
     ptr = &a;
 
-    float *fptr = new float(40.789);
+    float *fptr = new(nothrow) float(40.789);
 
     cout << "Value of a at address "<<ptr<<" is "<<*ptr<<endl;
     cout << "Value  at address "<<fptr<<" is "<<*fptr<<endl;
@@ -28,7 +28,7 @@ int main(int argc, char const *argv[])
     
     /*for array */
     const int n = 10;
-    int *arr = new int[n];
+    int *arr = new(nothrow) int[n];
 
     if(!arr){
         cout<<"Memory allocation is failsd\n";
@@ -51,7 +51,7 @@ int main(int argc, char const *argv[])
     }
 
     /*for custom data type*/
-    Cust *cptr = new Cust(10);
+    Cust *cptr = new(nothrow) Cust(10);
     cout << "value at address "<<cptr<<" is "<<cptr->p<<endl;
 
     cout <<"\nFreeing allocated memory\n";
