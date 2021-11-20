@@ -22,7 +22,7 @@ public:
 
 int main(int argc, char const *argv[])
 {
-    Complex C1;
+    //Complex C1;
     // C1.SetData(1,54);
     // C1.GetData();
 
@@ -30,10 +30,15 @@ int main(int argc, char const *argv[])
     // (*ptr).SetData(1,54);
     // (*ptr).GetData();
 
-    Complex *ptr = new Complex;
+    Complex *ptr = new Complex[3]; // Create array of objects 
     ptr->SetData(1,54);
     ptr->GetData();
-
+    ptr++;
+    ptr->SetData(5,10);
+    ptr->GetData();
+    ptr++;
+    ptr->SetData(10,30);
+    ptr->GetData();
 
     return 0;
 }
