@@ -4,7 +4,7 @@ using namespace std;
 void swap(int num1, int num2)
 {
     int temp=0;
-    cout<<"before swapping value of num1 and num2 is"<<num1<<" "<<num2<<endl;
+    cout<<"before swapping value of num1 and num2 is "<<num1<<" "<<num2<<endl;
     temp = num1;
     num1=num2;
     num2=temp;
